@@ -1,0 +1,48 @@
+{
+  "name": "suppliers-sdk",
+  "version": "1.0.0",
+  "description": "Add products",
+  "module": "dist/index.esm.js",
+  "unpkg": "dist/index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "build-o": "SET NODE_ENV=development & node scripts/build",
+    "build": "babel ./src --out-dir dist",
+    "dev": "node scripts/watcher",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "xml",
+    "scrapper"
+  ],
+  "author": "Knawat LLC",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "browser-sync": "^2.26.3",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "filesize": "^4.1.2",
+    "gzip-size": "^5.0.0",
+    "jest": "^24.5.0",
+    "path": "^0.12.7",
+    "prettier": "^1.16.4",
+    "rollup": "^1.7.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.2",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-resolve": "0.0.1-predev.1",
+    "uglify-js": "^3.5.2"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "querystring": "^0.2.0"
+  }
+}
