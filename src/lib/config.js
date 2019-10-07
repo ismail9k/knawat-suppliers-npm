@@ -7,4 +7,5 @@ const config = {
         'Content-Type': 'application/json'
       }
 }
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 module.exports = config;
